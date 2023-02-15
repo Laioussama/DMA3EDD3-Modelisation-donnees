@@ -1,0 +1,40 @@
+@prefix rdf: <http: www.w3.org 1999 02 22-rdf-syntax-ns#> .
+@prefix voc: <http: www.PARIS8.fr voc#> .
+@prefix xml: <http: www.w3.org XML 1998 namespace> .
+@prefix xsd: <http: www.w3.org 2001 XMLSchema#> .
+
+<http: www.RDFTurtle.fr/data#Margot> a voc:femme, voc:enseignante ;
+
+    voc:age "32"^^xsd:string ;
+    voc:pantalon "40"^^xsd:string;
+    voc:chaussure "38"^^xsd:string;
+    voc:enfant      <http: www.RDFTurtle.fr/data#Marie>,
+                    <http: www.RDFTurtle.fr/data#Simon>;
+
+    voc:epoux   <http: www.RDFTurtle.fr/data#Arthur>;
+
+    voc:mère    <http: www.RDFTurtle.fr/data#Simone>;
+
+    voc:collegue <http: www.RDFTurtle.fr/data#Pierre>;
+                 <http: www.RDFTurtle.fr/data#Alice>;
+    voc:nom "Margot" .
+                            
+<http: www.RDFTurtle.fr/data#Arthur> a voc:Homme ;
+    voc:enfant      <http: www.RDFTurtle.fr/data#Marie>,
+                    <http: www.RDFTurtle.fr/data#Simon>;
+    voc:nom "Arthur" .
+
+<http: www.RDFTurtle.fr/data#Marie> a voc:femme ;
+    voc:nom "Marie" .
+
+<http: www.RDFTurtle.fr/data#Simone> a voc:femme ;
+    voc:nom "Simone" .
+
+<http: www.RDFTurtle.fr/data#Alice> a voc:femme ;
+    voc:nom "Alice" . 
+
+<http: www.RDFTurtle.fr/data#Simon> a voc:Homme ;
+    voc:nom "Simon" .
+
+<http: www.RDFTurtle.fr/data#Pierre> a voc:Homme ;
+    voc:nom "Pierre" .
