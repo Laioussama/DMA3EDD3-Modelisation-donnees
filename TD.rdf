@@ -1,0 +1,65 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://www.inria.fr/2007/09/11/humans.rdfs#" xml:base="http://www.inria.fr/2007/09/11/humans.rdfs-instances">
+
+<Femme rdf:ID="">
+<nom>Margot</nom>
+<Sonepoux rdf:resource="#arthur"/>
+<sonenfant rdf:resource="#simon"/>
+ <sonenfant rdf:resource="#marie"/>
+</femme>
+
+<Personne rdf:ID="margot">
+<nom>margot</nom>
+<pointure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</pointure>
+<age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</age>
+<pantalon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</pantalon>
+<SAMERE rdf:resource="#John"/>
+</Personne>
+
+<Personne rdf:ID="arthur">
+<nom>arthur</nom>
+<pointure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</pointure>
+<age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</age>
+<pantalon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</pantalon>
+<hasFather rdf:resource="#simone"/>
+</Personne>
+
+<Personne rdf:ID="simon">
+<rdf:type rdf:resource="http://www.inria.fr/2007/09/11/humans.rdfs#enseignant"/>
+<enfantde rdf:resource="#arthur"/>
+<nom>simon</nom>
+<sasoeur rdf:resource="#marie"/>
+</Personne>
+
+<Personne rdf:ID="marie">
+<rdf:type rdf:resource="http://www.inria.fr/2007/09/11/humans.rdfs#enseignant"/>
+<enfantde rdf:resource="#margot"/>
+<nom>marie</nom>
+<sonfrere rdf:resource="#simon"/>
+</Personne>
+
+<femme rdf:ID="simone">
+<merede rdf:resource="#margot"/>
+<nom>simone</nom>
+</femme>
+
+<homme rdf:ID="arthur">
+<epoux rdf:resource="#margot"/>
+<sonenfant rdf:resource="#marie"/>
+<sonenfant rdf:resource="#simon"/>
+<nom>arthur</nom>
+</homme>
+
+<homme rdf:ID="simon">
+<nom>simon</nom>
+</homme>
+
+<femme rdf:ID="marie">
+<nom>Flora</nom>
+</femme>
+
+<femme rdf:ID="simone">
+<nom>simone</nom>
+</femme>
+
+
+</rdf:RDF>
